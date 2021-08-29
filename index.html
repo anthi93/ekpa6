@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function(){
+  $("p").click(function(){
+    $(this).hide();
+  });
+});
+  </script>
+  <script>
+    $(document).ready(function(){
+      $("h3").dblclick(function(){
+        $(this).hide();
+      });
+    });
+    </script>
+    <script>
+        $(document).ready(function(){
+          $("#p1").mouseleave(function(){
+            alert("Bye! You now leave p1!");
+          });
+        });
+        </script>
+        <script>
+            $(document).ready(function(){
+              $("#p1").mouseenter(function(){
+                alert("You entered p1!");
+              });
+            });
+            </script>
+            <script>
+            $(document).ready(function(){
+                $("#h2").hover(function(){
+                  alert("You entered p1!");
+                },
+                function(){
+                  alert("Bye! You now leave p1!");
+                }); 
+              });
+              </script>
+</head>
+<body>
+    <p>CLICK ME!! </p>
+    <h3>If you double-click on me, I will disappear.</h3>
+    <p id="p1">This is a paragraph.</p>
+    <p id="p1">And this paragraph too.</p>
+    <p id="h2">This is a paragraph.</p>
+
+
+</body>
+</html>
